@@ -32,6 +32,16 @@ dependencies {
 
     // yaml instead of properties
     runtimeOnly("org.yaml:snakeyaml")
+
+    // Micronaut Test for JUnit 5
+    testImplementation("io.micronaut.test:micronaut-test-junit5")
+
+    // Testcontainers for MySQL (if you want to test with a real DB)
+    testImplementation("org.testcontainers:junit-jupiter:1.19.3")
+    testImplementation("org.testcontainers:mysql:1.19.3")
+
+    // H2 for lightweight testing (alternative to Testcontainers)
+    testImplementation("com.h2database:h2")
 }
 
 
