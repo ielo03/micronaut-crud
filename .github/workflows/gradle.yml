@@ -2,8 +2,7 @@ name: Micronaut CI/CD
 
 on:
   push:
-    branches:
-      - main  # Runs only when a PR is merged into main
+    branches: ["jdbc", "main"]
 
 jobs:
   test-and-build:
